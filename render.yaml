@@ -1,0 +1,9 @@
+services:
+  - type: worker
+    name: btc-bot-final
+    env: python
+    repo: https://github.com/Sandy100-bot/btc-bot-final
+    branch: main
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python btc_bot_final.py"
+    plan: free
